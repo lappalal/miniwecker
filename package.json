@@ -17,9 +17,5 @@
   },
   "homepage": "https://github.com/lappalal/miniwecker#readme",
   "dependencies": {
-    "body-parser": "^1.17.2",
-    "express": "^4.15.3",
-    "method-override": "^2.3.9",
-    "mongoose": "^4.10.2"
   }
 }
