@@ -18,26 +18,27 @@ nav {
   ul {
     list-style: none;
     text-align: center;
+    font-family: 'Indie Flower', sans-serif;
+    font-size: 20pt;
 
     li {
-      line-height: 50px;
-      height: 50px;
+      line-height: 65px;
+      height: 65px;
       padding: 5px 20px;
       display: inline-block;
       overflow-x: hidden;
 
       a {
         width: 200px;
-        height: 50px;
+        height: 65px;
         display: block;
+        text-decoration: none;
+        color: black;
         background-repeat: no-repeat;
         background-size: 200px;
         cursor: pointer !important;
 
         &#startseite {
-          background-image: url('img/menu/startseite.svg');
-          background-size: contain;
-          cursor: pointer !important;
           &:hover {
             background-image: url('img/menu/startseiteHover.svg');
             background-size: contain;
@@ -46,9 +47,6 @@ nav {
         }
 
         &#diekjg {
-          background-image: url('img/menu/dieKJG.svg');
-          background-size: contain;
-          cursor: pointer !important;
           &:hover {
             background-image: url('img/menu/dieKJGHover.svg');
             background-size: contain;
@@ -57,9 +55,6 @@ nav {
         }
 
         &#gruppen {
-          background-image: url('img/menu/gruppen.svg');
-          background-size: contain;
-          cursor: pointer !important;
           &:hover {
             background-image: url('img/menu/gruppenHover.svg');
             background-size: contain;
@@ -68,9 +63,6 @@ nav {
         }
 
         &#aktionen {
-          background-image: url('img/menu/aktionen.svg');
-          background-size: contain;
-          cursor: pointer !important;
           &:hover {
             background-image: url('img/menu/aktionenHover.svg');
             background-size: contain;
@@ -79,9 +71,6 @@ nav {
         }
 
         &#fotos {
-          background-image: url('img/menu/fotos.svg');
-          background-size: contain;
-          cursor: pointer !important;
           &:hover {
             background-image: url('img/menu/fotosHover.svg');
             background-size: contain;
@@ -90,9 +79,6 @@ nav {
         }
 
         &#zeltlager {
-          background-image: url('img/menu/zeltlager.svg');
-          background-size: contain;
-          cursor: pointer !important;
           &:hover {
             background-image: url('img/menu/zeltlagerHover.svg');
             background-size: contain;
@@ -101,9 +87,6 @@ nav {
         }
 
         &#kontakt {
-          background-image: url('img/menu/kontakt.svg');
-          background-size: contain;
-          cursor: pointer !important;
           &:hover {
             background-image: url('img/menu/kontaktHover.svg');
             background-size: contain;

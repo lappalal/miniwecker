@@ -14,76 +14,52 @@ nav {
   width: 100vw; }
   nav ul {
     list-style: none;
-    text-align: center; }
+    text-align: center;
+    font-family: 'Indie Flower', sans-serif;
+    font-size: 20pt; }
     nav ul li {
-      line-height: 50px;
-      height: 50px;
+      line-height: 65px;
+      height: 65px;
       padding: 5px 20px;
       display: inline-block;
       overflow-x: hidden; }
       nav ul li a {
         width: 200px;
-        height: 50px;
+        height: 65px;
         display: block;
+        text-decoration: none;
+        color: black;
         background-repeat: no-repeat;
         background-size: 200px;
         cursor: pointer !important; }
-        nav ul li a#startseite {
-          background-image: url("img/menu/startseite.svg");
+        nav ul li a#startseite:hover {
+          background-image: url("img/menu/startseiteHover.svg");
           background-size: contain;
           cursor: pointer !important; }
-          nav ul li a#startseite:hover {
-            background-image: url("img/menu/startseiteHover.svg");
-            background-size: contain;
-            cursor: pointer !important; }
-        nav ul li a#diekjg {
-          background-image: url("img/menu/dieKJG.svg");
+        nav ul li a#diekjg:hover {
+          background-image: url("img/menu/dieKJGHover.svg");
           background-size: contain;
           cursor: pointer !important; }
-          nav ul li a#diekjg:hover {
-            background-image: url("img/menu/dieKJGHover.svg");
-            background-size: contain;
-            cursor: pointer !important; }
-        nav ul li a#gruppen {
-          background-image: url("img/menu/gruppen.svg");
+        nav ul li a#gruppen:hover {
+          background-image: url("img/menu/gruppenHover.svg");
           background-size: contain;
           cursor: pointer !important; }
-          nav ul li a#gruppen:hover {
-            background-image: url("img/menu/gruppenHover.svg");
-            background-size: contain;
-            cursor: pointer !important; }
-        nav ul li a#aktionen {
-          background-image: url("img/menu/aktionen.svg");
+        nav ul li a#aktionen:hover {
+          background-image: url("img/menu/aktionenHover.svg");
           background-size: contain;
           cursor: pointer !important; }
-          nav ul li a#aktionen:hover {
-            background-image: url("img/menu/aktionenHover.svg");
-            background-size: contain;
-            cursor: pointer !important; }
-        nav ul li a#fotos {
-          background-image: url("img/menu/fotos.svg");
+        nav ul li a#fotos:hover {
+          background-image: url("img/menu/fotosHover.svg");
           background-size: contain;
           cursor: pointer !important; }
-          nav ul li a#fotos:hover {
-            background-image: url("img/menu/fotosHover.svg");
-            background-size: contain;
-            cursor: pointer !important; }
-        nav ul li a#zeltlager {
-          background-image: url("img/menu/zeltlager.svg");
+        nav ul li a#zeltlager:hover {
+          background-image: url("img/menu/zeltlagerHover.svg");
           background-size: contain;
           cursor: pointer !important; }
-          nav ul li a#zeltlager:hover {
-            background-image: url("img/menu/zeltlagerHover.svg");
-            background-size: contain;
-            cursor: pointer !important; }
-        nav ul li a#kontakt {
-          background-image: url("img/menu/kontakt.svg");
+        nav ul li a#kontakt:hover {
+          background-image: url("img/menu/kontaktHover.svg");
           background-size: contain;
           cursor: pointer !important; }
-          nav ul li a#kontakt:hover {
-            background-image: url("img/menu/kontaktHover.svg");
-            background-size: contain;
-            cursor: pointer !important; }
         nav ul li a span {
           display: none; }
 
