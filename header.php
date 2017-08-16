@@ -1,27 +1,56 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Kath. Jugend Gauting - Homepage</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
+<?php
+/**
+ * The header for our theme
+ *
+ * This is the template that displays all of the <head> section and everything up until <div id="content">
+ *
+ * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
+ *
+ * @package Miniwecker
+ */
 
-    <header>
-      <div class="header">
-        <img src="img/header.svg" alt="dummy" class="header-img">
-      </div>
-    </header>
+?>
+<!doctype html>
+<html <?php language_attributes(); ?>>
+<head>
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
 
-    <nav>
-      <!--<img src="img/dummy.jpg" alt="dummy" class="featured-image">-->
-      <ul>
-        <li><a href="#" id="startseite">Startseite</a></li>
-        <li><a href="#" id="diekjg">Die KJG</a></li>
-        <li><a href="#" id="gruppen">Gruppen</a></li>
-        <li><a href="#" id="aktionen">Aktionen</a></li>
-        <li><a href="#" id="fotos">Fotos</a></li>
-        <li><a href="#" id="zeltlager">Zeltlager</a></li>
-        <li><a href="#" id="kontakt">Kontakt</a></li>
-      </ul>
-    </nav>
+	<?php wp_head(); ?>
+</head>
+
+<body <?php body_class(); ?>>
+<div id="page" class="site">
+	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'miniwecker' ); ?></a>
+
+	<header id="masthead" class="site-header">
+		<div class="site-branding">
+			<?php
+			the_custom_logo();
+			if ( is_front_page() && is_home() ) : ?>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<?php else : ?>
+				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+			<?php
+			endif;
+
+			$description = get_bloginfo( 'description', 'display' );
+			if ( $description || is_customize_preview() ) : ?>
+				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+			<?php
+			endif; ?>
+		</div><!-- .site-branding -->
+
+		<nav id="site-navigation" class="main-navigation">
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'miniwecker' ); ?></button>
+			<?php
+				wp_nav_menu( array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+				) );
+			?>
+		</nav><!-- #site-navigation -->
+	</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
