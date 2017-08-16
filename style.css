@@ -11,7 +11,8 @@ header {
     margin: 0; }
 
 nav {
-  width: 100vw; }
+  width: 100vw;
+  border-bottom: black 1px solid; }
   nav ul {
     list-style: none;
     text-align: center;
@@ -64,20 +65,57 @@ nav {
           display: none; }
 
 main {
-  border: black 2px solid;
-  margin: 0;
+  width: calc(100vw - 24px);
   padding: 10px; }
-  main .content {
-    width: calc(69vw - 24px);
-    border: black 2px solid;
-    margin: 0;
+  main .primary {
+    width: calc(44vw - 24px);
+    margin-left: 15vw;
     padding: 10px;
     display: inline-block; }
-    main .content .post {
-      background-color: red; }
-  main .sidebar {
-    width: calc(29vw - 24px);
-    border: black 2px solid;
+    main .primary .post {
+      overflow: hidden;
+      margin-bottom: 5vh;
+      padding-bottom: 2vh;
+      border-bottom: #66D998 2px solid; }
+      main .primary .post .date {
+        text-align: center;
+        font-family: 'Raleway', serif;
+        font-size: small; }
+      main .primary .post .title {
+        text-align: center;
+        font-family: 'Indie Flower', sans-serif;
+        margin-top: 0; }
+        main .primary .post .title h2 {
+          margin-top: 0;
+          font-size: 30pt;
+          border-bottom: #DD5371 2px solid; }
+      main .primary .post img {
+        width: calc(44vw - 24px);
+        height: auto;
+        margin-bottom: 20px; }
+      main .primary .post .content {
+        font-family: 'Raleway', sans-serif; }
+      main .primary .post .signature {
+        font-family: 'Indie Flower', sans-serif; }
+        main .primary .post .signature h6 {
+          font-size: 20pt;
+          margin: 0; }
+  main .secondary {
+    width: calc(39vw - 24px);
     margin: 0;
     padding: 10px;
-    display: inline-block; }
+    display: inline-block;
+    float: right;
+    text-align: center; }
+    main .secondary .widget {
+      font-family: 'Raleway', sans-serif;
+      width: 20vw;
+      margin: 0 auto; }
+      main .secondary .widget .title {
+        font-family: 'Indie Flower', sans-serif;
+        font-weight: bold;
+        font-size: 20pt;
+        border-bottom: #9E5DDD 2px solid;
+        margin-bottom: 20px; }
+      main .secondary .widget .content {
+        font-family: 'Raleway', sans-serif; }

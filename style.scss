@@ -14,6 +14,7 @@ header {
 }
 nav {
   width: 100vw;
+  border-bottom: rgba(black, 10%) 1px solid ;
 
   ul {
     list-style: none;
@@ -102,26 +103,82 @@ nav {
   }
 }
 main {
-  border: black 2px solid;
-  margin: 0;
+  width: calc(100vw - 24px);
   padding: 10px;
 
-  .content {
-    width: calc(69vw - 24px);
-    border: black 2px solid;
-    margin: 0;
+  .primary {
+    width: calc(44vw - 24px);
+    margin-left: 15vw;
     padding: 10px;
     display: inline-block;
 
     .post {
-      background-color: red;
+      overflow: hidden;
+      margin-bottom: 5vh;
+      padding-bottom: 2vh;
+      border-bottom: #66D998 2px solid;
+
+      .date {
+        text-align: center;
+        font-family: 'Raleway', serif;
+        font-size: small;
+      }
+
+      .title {
+        text-align: center;
+        font-family: 'Indie Flower', sans-serif;
+        margin-top: 0;
+
+        h2 {
+          margin-top: 0;
+          font-size: 30pt;
+          border-bottom: #DD5371 2px solid;
+        }
+      }
+
+      img {
+        width: calc(44vw - 24px);
+        height: auto;
+        margin-bottom: 20px;
+      }
+
+      .content {
+        font-family: 'Raleway', sans-serif;
+      }
+
+      .signature {
+        font-family: 'Indie Flower', sans-serif;
+        h6 {
+          font-size: 20pt;
+          margin: 0;
+        }
+      }
     }
   }
-  .sidebar {
-    width: calc(29vw - 24px);
-    border: black 2px solid;
+  .secondary {
+    width: calc(39vw - 24px);
     margin: 0;
     padding: 10px;
     display: inline-block;
+    float: right;
+    text-align: center;
+
+    .widget {
+      font-family: 'Raleway', sans-serif;
+      width: 20vw;
+      margin: 0 auto;
+
+      .title {
+        font-family: 'Indie Flower', sans-serif;
+        font-weight: bold;
+        font-size: 20pt;
+        border-bottom: #9E5DDD 2px solid;
+        margin-bottom: 20px;
+      }
+
+      .content {
+        font-family: 'Raleway', sans-serif;
+      }
+    }
   }
 }
