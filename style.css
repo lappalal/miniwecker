@@ -277,7 +277,8 @@ big {
 # Elements
 --------------------------------------------------------------*/
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif; }
 
 *,
 *:before,
@@ -287,7 +288,8 @@ html {
 
 body {
   background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
+  /* Fallback for when there is no custom background color defined. */
+  font-family: inherit; }
 
 blockquote, q {
   quotes: "" ""; }
@@ -429,39 +431,47 @@ a {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-  clear: both;
-  display: block;
-  float: left;
-  width: 100%; }
+  font-family: 'Indie Flower', sans-serif;
+  width: 100vw;
+  text-align: center;
+  line-height: 70px;
+  height: 70px;
+  margin-bottom: 10px; }
   .main-navigation ul {
-    display: none;
+    font-family: inherit;
+    text-decoration: none;
     list-style: none;
-    margin: 0;
-    padding-left: 0; }
-    .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-      float: left;
-      position: absolute;
-      top: 100%;
-      left: -999em;
-      z-index: 99999; }
-      .main-navigation ul ul ul {
-        left: -999em;
-        top: 0; }
-      .main-navigation ul ul li:hover > ul,
-      .main-navigation ul ul li.focus > ul {
-        left: 100%; }
-      .main-navigation ul ul a {
+    line-height: 70px;
+    height: 70px; }
+    .main-navigation ul li {
+      font-family: inherit;
+      display: inline-block;
+      padding: 0 50px;
+      width: 200px;
+      line-height: 70px;
+      height: 70px;
+      background-size: 200px;
+      background-repeat: no-repeat; }
+      .main-navigation ul li a {
+        font-family: inherit;
+        text-decoration: none;
+        color: inherit;
+        font-size: 20pt;
         width: 200px; }
-    .main-navigation ul li:hover > ul,
-    .main-navigation ul li.focus > ul {
-      left: auto; }
-  .main-navigation li {
-    float: left;
-    position: relative; }
-  .main-navigation a {
-    display: block;
-    text-decoration: none; }
+      .main-navigation ul li.nav-homepage:hover {
+        background-image: url("img/menu/startseiteHover.svg"); }
+      .main-navigation ul li.nav-kjg:hover {
+        background-image: url("img/menu/dieKJGHover.svg"); }
+      .main-navigation ul li.nav-gruppen:hover {
+        background-image: url("img/menu/gruppenHover.svg"); }
+      .main-navigation ul li.nav-aktionen:hover {
+        background-image: url("img/menu/aktionenHover.svg"); }
+      .main-navigation ul li.nav-fotos:hover {
+        background-image: url("img/menu/fotosHover.svg"); }
+      .main-navigation ul li.nav-zeltlager:hover {
+        background-image: url("img/menu/zeltlagerHover.svg"); }
+      .main-navigation ul li.nav-kontakt:hover {
+        background-image: url("img/menu/kontaktHover.svg"); }
 
 /* Small menu. */
 .menu-toggle,
@@ -585,14 +595,66 @@ a {
   width: 100vw;
   height: 100vh; }
   .site .site-header {
-    width: 100vw;
-    background-color: red; }
+    width: 100vw; }
+
+.content-area {
+  width: 70vw;
+  float: left; }
+  .content-area .site-main {
+    width: 50vw;
+    margin: 0 auto;
+    padding: 20px; }
+
+.widget-area {
+  width: 30vw;
+  float: right;
+  padding: 20px; }
 
 .sticky {
   display: block; }
 
 .hentry {
   margin: 0 0 1.5em; }
+
+.entry-meta {
+  font-family: inherit;
+  text-align: center;
+  font-size: small;
+  font-weight: bold; }
+  .entry-meta a {
+    text-decoration: none;
+    color: #999999; }
+
+.entry-divider {
+  height: 3px;
+  background-color: red;
+  width: 60%;
+  margin: 0 auto; }
+  .entry-divider.top {
+    margin-bottom: 10px;
+    margin-top: 10px; }
+  .entry-divider.bottom {
+    margin-top: 100px;
+    margin-bottom: 25px; }
+
+.entry-title {
+  font-family: 'Indie Flower', sans-serif;
+  text-align: center;
+  font-size: 30pt;
+  margin: 0; }
+  .entry-title a {
+    text-decoration: none;
+    color: inherit; }
+
+.featured-image {
+  margin-top: 30px; }
+  .featured-image img {
+    display: block;
+    margin: 0 auto; }
+
+.signature {
+  font-family: 'Indie Flower', sans-serif;
+  margin: 0; }
 
 .updated:not(.published) {
   display: none; }

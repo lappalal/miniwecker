@@ -25,77 +25,82 @@ a {
 ## Menus
 --------------------------------------------------------------*/
 .main-navigation {
-	clear: both;
-	display: block;
-	float: left;
-	width: 100%;
+  font-family: 'Indie Flower', sans-serif;
+  width: 100vw;
+  text-align: center;
+  line-height: 70px;
+  height: 70px;
+  margin-bottom: 10px;
 
-	ul {
-		display: none;
-		list-style: none;
-		margin: 0;
-		padding-left: 0;
+  ul {
+    font-family: inherit;
+    text-decoration: none;
+    list-style: none;
+    line-height: 70px;
+    height: 70px;
 
-		ul {
-			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-			float: left;
-			position: absolute;
-			top: 100%;
-			left: -999em;
-			z-index: 99999;
+    li {
+      font-family: inherit;
+      display: inline-block;
+      padding: 0 50px;
+      width: 200px;
+      line-height: 70px;
+      height: 70px;
+      background-size: 200px;
+      background-repeat: no-repeat;
 
-			ul {
-				left: -999em;
-				top: 0;
-			}
+      a {
+        font-family: inherit;
+        text-decoration: none;
+        color: inherit;
+        font-size: 20pt;
+        width: 200px;
+      }
 
-			li {
-				&:hover > ul,
-				&.focus > ul {
-					left: 100%;
-				}
-			}
+      &.nav-homepage {
+        &:hover {
+          background-image: url( 'img/menu/startseiteHover.svg' );
+        }
+      }
 
-			a {
-				width: 200px;
-			}
+      &.nav-kjg {
+        &:hover {
+          background-image: url( 'img/menu/dieKJGHover.svg' );
+        }
+      }
 
-			:hover > a,
-			.focus > a {
-			}
+      &.nav-gruppen {
+        &:hover {
+          background-image: url( 'img/menu/gruppenHover.svg' );
+        }
+      }
 
-			a:hover,
-			a.focus {
-			}
-		}
+      &.nav-aktionen {
+        &:hover {
+          background-image: url( 'img/menu/aktionenHover.svg' );
+        }
+      }
 
-		li:hover > ul,
-		li.focus > ul {
-			left: auto;
-		}
-	}
+      &.nav-fotos {
+        &:hover {
+          background-image: url( 'img/menu/fotosHover.svg' );
+        }
+      }
 
-	li {
-		float: left;
-		position: relative;
+      &.nav-zeltlager {
+        &:hover {
+          background-image: url( 'img/menu/zeltlagerHover.svg' );
+        }
+      }
 
-		&:hover > a,
-		&.focus > a {
-		}
-	}
-
-	a {
-		display: block;
-		text-decoration: none;
-	}
-
-	.current_page_item > a,
-	.current-menu-item > a,
-	.current_page_ancestor > a,
-	.current-menu-ancestor > a {
-	}
+      &.nav-kontakt {
+        &:hover {
+          background-image: url( 'img/menu/kontaktHover.svg' );
+        }
+      }
+    }
+  }
 }
-
 /* Small menu. */
 .menu-toggle,
 .main-navigation.toggled ul {

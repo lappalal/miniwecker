@@ -9,8 +9,25 @@
 
   .site-header {
     width: 100vw;
-    background-color: red;
   }
+
+}
+
+.content-area {
+  width: 70vw;
+  float: left;
+
+  .site-main {
+    width: 50vw;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}
+
+.widget-area {
+  width: 30vw;
+  float: right;
+  padding: 20px;
 }
 
 .sticky {
@@ -19,6 +36,60 @@
 
 .hentry {
 	margin: 0 0 1.5em;
+}
+
+.entry-meta {
+  font-family: inherit;
+  text-align: center;
+  font-size: small;
+  font-weight: bold;
+
+  a {
+    text-decoration: none;
+    color: lighten(black, 60%);
+  }
+}
+
+.entry-divider {
+  height: 3px;
+  background-color: red;
+  width: 60%;
+  margin: 0 auto;
+
+  &.top {
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+  &.bottom {
+    margin-top: 100px;
+    margin-bottom: 25px;
+  }
+}
+
+.entry-title {
+  font-family: 'Indie Flower', sans-serif;
+  text-align: center;
+  font-size: 30pt;
+  margin: 0;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.featured-image {
+  margin-top: 30px;
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.signature {
+  font-family: 'Indie Flower', sans-serif;
+  margin: 0;
 }
 
 .updated:not(.published){

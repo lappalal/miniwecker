@@ -11,6 +11,9 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
+    <div class="entry-meta">
+      <?php miniwecker_posted_on(); ?>
+    </div><!-- .entry-meta -->
 		<?php
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
@@ -19,12 +22,17 @@
 		endif;
 
 		if ( 'post' === get_post_type() ) : ?>
-		<div class="entry-meta">
-			<?php miniwecker_posted_on(); ?>
-		</div><!-- .entry-meta -->
 		<?php
 		endif; ?>
 	</header><!-- .entry-header -->
+
+  <hr class="entry-divider top" />
+
+  <?php if ( has_post_thumbnail() ) : ?>
+    <div class="featured-image">
+      <?php echo get_the_post_thumbnail() ?>
+    </div>
+  <?php endif; ?>
 
 	<div class="entry-content">
 		<?php
@@ -40,7 +48,6 @@
 				),
 				get_the_title()
 			) );
-
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'miniwecker' ),
 				'after'  => '</div>',
@@ -49,6 +56,9 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php miniwecker_entry_footer(); ?>
+    <h2 class="signature" >Eure KJG</h2>
+    <?php miniwecker_edit_link(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
+
+<hr class="entry-divider bottom" />
