@@ -1,0 +1,14 @@
+@media screen and (max-width: 950px) {
+  #primary {
+    width: 100vw;
+  }
+  .content-area {
+    width: 100vw;
+    .site-main {
+      width: inherit;
+    }
+  }
+  #secondary {
+    width: 100vw;
+  }
+}

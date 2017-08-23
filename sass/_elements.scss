@@ -1,6 +1,6 @@
 html {
 	box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
+  font-family: $font__main;
 }
 
 *,
@@ -15,12 +15,33 @@ body {
 }
 
 blockquote, q {
-	quotes: "" "";
+padding: 30px 30px 30px 90px;
+margin: 0;
 
-	&:before,
-	&:after {
-		content: "";
-	}
+  &::before {
+    content: "”";
+    display: block;
+    width: 90px;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 72px;
+    line-height: 72px;
+    font-weight: 700;
+    color: rgb(170, 170, 170);
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    top: 27px;
+    left: 0px;
+  }
+  p {
+    margin: 0;
+    font-style: italic;
+    font-weight: 300;
+  }
+}
+cite {
+  font-style: italic;
+  font-weight: 600;
 }
 
 hr {
@@ -31,21 +52,47 @@ hr {
 }
 
 ul, ol {
-	margin: 0 0 1.5em 3em;
+	margin: 0 0 1.5em 0;
 }
 
 ul {
 	list-style: disc;
+  list-style-position: outside;
+  ul {
+    list-style: circle;
+    list-style-position: inherit;
+    ul {
+      list-style: square;
+      list-style-position: inherit;
+      ul {
+        list-style: initial;
+        list-style-position: inherit;
+      }
+    }
+  }
 }
 
 ol {
-	list-style: decimal;
+	list-style: upper-roman;
+  list-style-position: outside;
+  ol {
+    list-style: decimal;
+    list-style-position: inherit;
+    ol {
+      list-style: lower-alpha;
+      list-style-position: inherit;
+      ol {
+        list-style: lower-roman;
+        list-style-position: inherit;
+      }
+    }
+  }
 }
 
 li > ul,
 li > ol {
 	margin-bottom: 0;
-	margin-left: 1.5em;
+	margin-left: 0;
 }
 
 dt {

@@ -1,4 +1,4 @@
-// @import "../layout/content-sidebar";
+// @import "layout/content-sidebar";
 // @import "../layout/sidebar-content";
 /*--------------------------------------------------------------
 ## Primary: Posts and pages
@@ -28,6 +28,7 @@
   width: 30vw;
   float: right;
   padding: 20px;
+  overflow: hidden;
 }
 
 .sticky {
@@ -35,7 +36,20 @@
 }
 
 .hentry {
-	margin: 0 0 1.5em;
+	margin: 0 0 8vh;
+
+  &::after {
+    width: 100%;
+    display: block;
+    text-align: right;
+    content: "Eure KJG";
+    font-family: $font__heading;
+    @include font-size(3);
+    transform: rotate(-10deg);
+    text-decoration: underline;
+    text-decoration-color: #9E5DDD;
+    line-height: 150%;
+  }
 }
 
 .entry-meta {
@@ -51,9 +65,9 @@
 }
 
 .entry-divider {
-  height: 3px;
-  background-color: red;
-  width: 60%;
+  height: 5px;
+  background-color: #3CD6D6;
+  width: 30%;
   margin: 0 auto;
 
   &.top {
@@ -67,10 +81,11 @@
 }
 
 .entry-title {
-  font-family: 'Indie Flower', sans-serif;
+  font-family: $font__heading;
   text-align: center;
-  font-size: 30pt;
   margin: 0;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 
   a {
     text-decoration: none;
@@ -79,7 +94,7 @@
 }
 
 .featured-image {
-  margin-top: 30px;
+  margin-bottom: 30px;
 
   img {
     display: block;
@@ -87,8 +102,11 @@
   }
 }
 
+.entry-content {
+}
+
 .signature {
-  font-family: 'Indie Flower', sans-serif;
+  font-family: $font__heading;
   margin: 0;
 }
 

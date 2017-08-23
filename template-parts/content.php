@@ -10,6 +10,13 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+  <?php if ( has_post_thumbnail() ) : ?>
+    <div class="featured-image">
+      <?php echo get_the_post_thumbnail() ?>
+    </div>
+  <?php endif; ?>
+
 	<header class="entry-header">
     <div class="entry-meta">
       <?php miniwecker_posted_on(); ?>
@@ -18,7 +25,7 @@
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h1 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h1>' );
 		endif;
 
 		if ( 'post' === get_post_type() ) : ?>
@@ -27,12 +34,6 @@
 	</header><!-- .entry-header -->
 
   <hr class="entry-divider top" />
-
-  <?php if ( has_post_thumbnail() ) : ?>
-    <div class="featured-image">
-      <?php echo get_the_post_thumbnail() ?>
-    </div>
-  <?php endif; ?>
 
 	<div class="entry-content">
 		<?php
@@ -56,9 +57,8 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-    <h2 class="signature" >Eure KJG</h2>
     <?php miniwecker_edit_link(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->
 
-<hr class="entry-divider bottom" />
+<!-- <hr class="entry-divider bottom" /> -->

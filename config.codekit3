@@ -7,7 +7,7 @@
 		"uuidString": "0CEF3030-3C80-4D72-868A-14EF0BBD47FF"
 		}
 	],
-"creatorBuild": "25849",
+"creatorBuild": "25900",
 "files": {
 	"\/.gitignore": {
 		"ft": 8192,
@@ -71,6 +71,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/img\/Header.png": {
+		"ft": 32768,
+		"iS": 223060,
+		"oA": 0,
+		"oAP": "\/img\/Header.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/img\/Header.svg": {
 		"ft": 2097152,
 		"miP": 0,
@@ -80,6 +91,17 @@
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
+		},
+	"\/img\/Header@4x.png": {
+		"ft": 32768,
+		"iS": 243094,
+		"oA": 0,
+		"oAP": "\/img\/Header@4x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/img\/leiter_2017.jpg": {
 		"ft": 16384,
@@ -205,6 +227,7 @@
 		},
 	"\/js\/customizer.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/customizer-min.js",
@@ -214,6 +237,7 @@
 		},
 	"\/js\/navigation.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/navigation-min.js",
@@ -223,6 +247,7 @@
 		},
 	"\/js\/skip-link-focus-fix.js": {
 		"ft": 64,
+		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/skip-link-focus-fix-min.js",
@@ -262,22 +287,10 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"\/LICENSE": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/LICENSE",
-		"oF": 0
-		},
 	"\/page.php": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/page.php",
-		"oF": 0
-		},
-	"\/phpcs.xml.dist": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/phpcs.xml.dist",
 		"oF": 0
 		},
 	"\/README.md": {
@@ -362,6 +375,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/_normalize.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/_responsive.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_responsive.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -624,7 +650,7 @@
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
-	"alwaysUseExternalServer": 0,
+	"alwaysUseExternalServer": 1,
 	"animateCSSInjections": 1,
 	"autoBuildNewItems": 1,
 	"autoprefixerBrowserString": "> 1%, last 2 versions, Firefox ESR, Opera 12.1",
@@ -1024,6 +1050,10 @@
 			"active": 0,
 			"optionString": "{'setWithoutGet': true, 'getWithoutSet': false}"
 			},
+		"array-bracket-newline": {
+			"active": 0,
+			"optionString": "{'multiline': true, 'minItems': null}"
+			},
 		"array-bracket-spacing": {
 			"active": 0,
 			"optionString": "'never', {'singleValue': false, 'objectsInArrays': false, 'arraysInArrays': false}"
@@ -1031,6 +1061,10 @@
 		"array-callback-return": {
 			"active": 0,
 			"optionString": ""
+			},
+		"array-element-newline": {
+			"active": 0,
+			"optionString": "'always'"
 			},
 		"arrow-body-style": {
 			"active": 0,
@@ -1128,6 +1162,10 @@
 			"active": 0,
 			"optionString": "'always', {'null': 'always'}"
 			},
+		"for-direction": {
+			"active": 0,
+			"optionString": ""
+			},
 		"func-call-spacing": {
 			"active": 0,
 			"optionString": "'never'"
@@ -1147,6 +1185,10 @@
 		"generator-star-spacing": {
 			"active": 0,
 			"optionString": "{'before': true, 'after': false}"
+			},
+		"getter-return": {
+			"active": 0,
+			"optionString": "{'allowImplicit': false}"
 			},
 		"global-require": {
 			"active": 0,
@@ -1275,6 +1317,10 @@
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
+			},
+		"no-buffer-constructor": {
+			"active": 0,
+			"optionString": ""
 			},
 		"no-caller": {
 			"active": 0,
@@ -1820,6 +1866,10 @@
 			"active": 0,
 			"optionString": "{'blocks': 'always', 'switches': 'always', 'classes': 'always'}"
 			},
+		"padding-line-between-statements": {
+			"active": 0,
+			"optionString": "{blankLine: 'always', prev:'*', next:'return'}"
+			},
 		"prefer-arrow-callback": {
 			"active": 0,
 			"optionString": ""
@@ -1888,6 +1938,10 @@
 			"active": 0,
 			"optionString": "{'before': false, 'after': true}"
 			},
+		"semi-style": {
+			"active": 0,
+			"optionString": "'last'"
+			},
 		"sort-imports": {
 			"active": 0,
 			"optionString": "{'ignoreCase': false, 'ignoreMemberSort': true, 'memberSyntaxSortOrder': ['none', 'all', 'multiple', 'single']}"
@@ -1927,6 +1981,10 @@
 		"strict": {
 			"active": 0,
 			"optionString": "'safe'"
+			},
+		"switch-colon-spacing": {
+			"active": 0,
+			"optionString": "{'after': true, 'before': false}"
 			},
 		"symbol-description": {
 			"active": 0,
@@ -1978,7 +2036,7 @@
 			}
 		},
 	"esLintSourceType": 0,
-	"externalServerAddress": "http:\/\/localhost:8888",
+	"externalServerAddress": "http:\/\/localhost",
 	"gitIgnoreBuildFolder": 1,
 	"hideConfigFile": 0,
 	"jsCheckerReservedNamesString": "",
@@ -2560,6 +2618,7 @@
 	"previewPathAddition": "",
 	"skippedFoldersString": "log, _logs, logs, _cache, cache, \/storage\/framework\/sessions, node_modules",
 	"sourceFolderName": "source",
+	"susyVersion": 3,
 	"uglifyDefinesString": "",
 	"uglifyFlags2": {
 		"ascii-only": {
