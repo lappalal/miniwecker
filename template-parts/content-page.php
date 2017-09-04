@@ -14,6 +14,8 @@
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
+  <hr class="entry-divider <?php global $post; $post_slug=$post->post_name; echo $post_slug; ?>" />
+
 	<div class="entry-content">
 		<?php
 			the_content();

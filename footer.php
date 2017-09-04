@@ -12,20 +12,18 @@
 ?>
 
 	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'miniwecker' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'miniwecker' ), 'WordPress' );
-			?></a>
-			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'miniwecker' ), 'miniwecker', '<a href="http://sautner.cc">Jakob Sautner</a>' );
-			?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+  <div id="colophon">
+    <div class="container">
+      <div class="blog-info">
+        <a id="blog-title" href="<?php echo home_url( '/' ); ?>" rel="home">
+          <?php bloginfo( 'name' ); ?>
+        </a> <!-- do not change the blog-title portion without knowing perfectly what you are doing -->
+      </div>
+      <div class="blog-credits">
+        <a href="/intern">Intern</a> | <a href="<?php echo admin_url(); ?>">Login</a> | made by <a id="blog-title" href="http:" rel="home">Jakob Sautner</a>
+      </div> <!-- changes on the credits should also be made in inc/jetpack.php for consistency (see infinite footer credits) -->
+    </div>
+  </div><!-- #infinite-footer -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

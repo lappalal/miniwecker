@@ -6,6 +6,27 @@
     width: 100vw;
     .site-main {
       width: inherit;
+      @media screen and (max-width: 400px) {
+        &.error-404 {
+          background-size: 90vw;
+          background-position: center;
+        }
+      }
+      @media screen and (min-width: 400px) and (max-width: 800px) {
+        &.error-404 {
+          background-size: 40vw;
+        }
+      }
+      @media screen and (max-width: 600px) {
+        &.error-404 {
+          background-position: center;
+        }
+      }
+      @media screen and (min-width: 1320px) {
+        &.error-404 {
+          background-size: 100% auto;
+        }
+      }
     }
   }
   #secondary {

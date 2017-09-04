@@ -11,12 +11,6 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-  <?php if ( has_post_thumbnail() ) : ?>
-    <div class="featured-image">
-      <?php echo get_the_post_thumbnail() ?>
-    </div>
-  <?php endif; ?>
-
 	<header class="entry-header">
     <div class="entry-meta">
       <?php miniwecker_posted_on(); ?>
@@ -35,6 +29,12 @@
 
   <hr class="entry-divider top" />
 
+    <?php if ( has_post_thumbnail() ) : ?>
+      <div class="featured-image">
+        <?php echo get_the_post_thumbnail() ?>
+      </div>
+    <?php endif; ?>
+    
 	<div class="entry-content">
 		<?php
 			the_content( sprintf(

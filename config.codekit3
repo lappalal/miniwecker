@@ -51,6 +51,26 @@
 		"oAP": "\/header.php",
 		"oF": 0
 		},
+	"\/img\/404Logo.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/404Logo.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/img\/404LogoGrey.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/img\/404LogoGrey.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
 	"\/img\/dummy.jpg": {
 		"ft": 16384,
 		"iS": 333249,
@@ -111,6 +131,17 @@
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/img\/Logo.png": {
+		"ft": 32768,
+		"iS": 216824,
+		"oA": 0,
+		"oAP": "\/img\/Logo.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/img\/menu\/aktionenHover.svg": {
@@ -353,6 +384,32 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/sass\/_fotos.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_fotos.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/_infinite-footer.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_infinite-footer.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/sass\/_navigation.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -401,6 +458,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/_site.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/sass\/_table-styling.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/_table-styling.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1

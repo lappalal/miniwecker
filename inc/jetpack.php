@@ -19,7 +19,7 @@ function miniwecker_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
 		'container' => 'main',
 		'render'    => 'miniwecker_infinite_scroll_render',
-		'footer'    => 'page',
+		'footer'    => 'colophon',
 	) );
 
 	// Add theme support for Responsive Videos.
@@ -52,3 +52,13 @@ function miniwecker_infinite_scroll_render() {
 		endif;
 	}
 }
+/**
+ * Modify the footer credits for JetPack Inifite Scroll
+ **/
+add_filter('infinite_scroll_credit','miniwecker_infinite_scroll_credit');
+
+function miniwecker_infinite_scroll_credit(){
+ $content = '<a href="/intern">Intern</a> | <a href="' . admin_url() . '">Login</a> | made by <a id="blog-title" href="http:" rel="home">Jakob Sautner</a>';
+ return $content;
+}
+/** End JetPack **/

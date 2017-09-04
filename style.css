@@ -519,6 +519,15 @@ a {
   height: 70px;
   margin-bottom: 10px;
   display: inline-block; }
+  @media screen and (max-width: 1230px) {
+    .main-navigation {
+      margin-bottom: 70px; } }
+  @media screen and (max-width: 495px) {
+    .main-navigation {
+      margin-bottom: 90px; } }
+  @media screen and (max-width: 370px) {
+    .main-navigation {
+      margin-bottom: 130px; } }
   .main-navigation ul {
     font-family: inherit;
     text-decoration: none;
@@ -697,9 +706,14 @@ a {
 --------------------------------------------------------------*/
 .site {
   width: 100vw;
-  height: 100vh; }
+  height: 100vh;
+  padding-bottom: 30px; }
   .site .site-header {
-    width: 100vw; }
+    width: 100vw;
+    box-shadow: 10px 0px 30px 5px #ddd; }
+
+.content .PP_Wrapper {
+  padding-bottom: 30px; }
 
 .content-area {
   width: 70vw;
@@ -708,6 +722,11 @@ a {
     width: 50vw;
     margin: 0 auto;
     padding: 20px; }
+    .content-area .site-main.error-404 {
+      background-image: url("img/404LogoGrey.svg");
+      background-position: right;
+      background-repeat: no-repeat;
+      background-size: 30vw; }
 
 .widget-area {
   width: 30vw;
@@ -730,7 +749,7 @@ a {
     font-size: 3rem;
     transform: rotate(-10deg);
     text-decoration: underline;
-    text-decoration-color: #9E5DDD;
+    text-decoration-color: #DD5371;
     line-height: 150%; }
 
 .entry-meta {
@@ -743,16 +762,25 @@ a {
     color: #999999; }
 
 .entry-divider {
-  height: 5px;
+  height: 3px;
   background-color: #3CD6D6;
-  width: 30%;
+  width: 70%;
   margin: 0 auto; }
   .entry-divider.top {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 10px; }
-  .entry-divider.bottom {
-    margin-top: 100px;
-    margin-bottom: 25px; }
+  .entry-divider.gruppen {
+    background-color: #42A1DB; }
+  .entry-divider.die-kjg {
+    background-color: #DD5371; }
+  .entry-divider.aktionen {
+    background-color: #66D998; }
+  .entry-divider.zeltlager {
+    background-color: #DD7141; }
+  .entry-divider.fotos {
+    background-color: #9E5DDD; }
+  .entry-divider.kontakt {
+    background-color: #E4D040; }
 
 .entry-title {
   font-family: "Indie Flower", cursive;
@@ -777,10 +805,58 @@ a {
 .updated:not(.published) {
   display: none; }
 
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+#colophon, #infinite-footer {
+  position: fixed;
+  width: 100vw;
+  bottom: 0;
+  height: 28px;
+  z-index: 99999; }
+  #colophon .container, #infinite-footer .container {
+    background: rgba(255, 255, 255, 0.8);
+    border-color: #ccc;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-style: solid;
+    border-width: 1px 0 0;
+    overflow: hidden;
+    padding: 1px 20px;
+    width: 100vw; }
+    #colophon .container a, #infinite-footer .container a {
+      text-decoration: none; }
+    #colophon .container .blog-info, #infinite-footer .container .blog-info {
+      display: inline-block; }
+      #colophon .container .blog-info a, #infinite-footer .container .blog-info a {
+        color: #111;
+        font-size: 14pt;
+        font-weight: bold; }
+    #colophon .container .blog-credits, #infinite-footer .container .blog-credits {
+      display: inline-block;
+      text-align: right;
+      float: right;
+      color: #888;
+      font-size: 12pt; }
+      #colophon .container .blog-credits a, #infinite-footer .container .blog-credits a {
+        color: #666; }
+
+@media screen and (max-width: 600px) {
+  #colophon {
+    font-size: small; } }
+
+/*--------------------------------------------------------------
+## Pages
+--------------------------------------------------------------*/
 .page-content,
 .entry-content,
 .entry-summary {
   margin: 1.5em 0 0; }
+
+.page-title {
+  margin-bottom: 0; }
+
+.page-content {
+  margin-top: 0; }
 
 .page-links {
   clear: both;
@@ -894,6 +970,21 @@ object {
   .content-area {
     width: 100vw; }
     .content-area .site-main {
-      width: inherit; }
+      width: inherit; } }
+    @media screen and (max-width: 950px) and (max-width: 400px) {
+      .content-area .site-main.error-404 {
+        background-size: 90vw;
+        background-position: center; } }
+    @media screen and (max-width: 950px) and (min-width: 400px) and (max-width: 800px) {
+      .content-area .site-main.error-404 {
+        background-size: 40vw; } }
+    @media screen and (max-width: 950px) and (max-width: 600px) {
+      .content-area .site-main.error-404 {
+        background-position: center; } }
+    @media screen and (max-width: 950px) and (min-width: 1320px) {
+      .content-area .site-main.error-404 {
+        background-size: 100% auto; } }
+
+@media screen and (max-width: 950px) {
   #secondary {
     width: 100vw; } }
