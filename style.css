@@ -329,7 +329,8 @@ html {
 body {
   background: #fff;
   /* Fallback for when there is no custom background color defined. */
-  font-family: inherit; }
+  font-family: inherit;
+  overflow-x: hidden; }
 
 blockquote, q {
   padding: 30px 30px 30px 90px;
@@ -519,15 +520,6 @@ a {
   height: 70px;
   margin-bottom: 10px;
   display: inline-block; }
-  @media screen and (max-width: 1230px) {
-    .main-navigation {
-      margin-bottom: 70px; } }
-  @media screen and (max-width: 495px) {
-    .main-navigation {
-      margin-bottom: 90px; } }
-  @media screen and (max-width: 370px) {
-    .main-navigation {
-      margin-bottom: 130px; } }
   .main-navigation ul {
     font-family: inherit;
     text-decoration: none;
@@ -554,18 +546,32 @@ a {
         width: 200px; }
       .main-navigation ul li.nav-homepage:hover {
         background-image: url("img/menu/startseiteHover.svg"); }
+      @media screen and (max-width: 498px) {
+        .main-navigation ul li.nav-homepage {
+          display: none; } }
       .main-navigation ul li.nav-kjg:hover {
         background-image: url("img/menu/dieKJGHover.svg"); }
+      @media screen and (max-width: 1230px) {
+        .main-navigation ul li.nav-kjg {
+          display: none; } }
       .main-navigation ul li.nav-gruppen:hover {
         background-image: url("img/menu/gruppenHover.svg"); }
       .main-navigation ul li.nav-aktionen:hover {
         background-image: url("img/menu/aktionenHover.svg"); }
+      @media screen and (max-width: 1230px) {
+        .main-navigation ul li.nav-aktionen {
+          display: none; } }
       .main-navigation ul li.nav-fotos:hover {
         background-image: url("img/menu/fotosHover.svg"); }
       .main-navigation ul li.nav-zeltlager:hover {
         background-image: url("img/menu/zeltlagerHover.svg"); }
-      .main-navigation ul li.nav-kontakt:hover {
-        background-image: url("img/menu/kontaktHover.svg"); }
+      .main-navigation ul li.nav-kontakt {
+        display: none; }
+        .main-navigation ul li.nav-kontakt:hover {
+          background-image: url("img/menu/kontaktHover.svg"); }
+        @media screen and (max-width: 840px) {
+          .main-navigation ul li.nav-kontakt {
+            display: none; } }
 
 /* Small menu. */
 @media screen and (max-width: 1435px) {
@@ -715,6 +721,9 @@ a {
 .content .PP_Wrapper {
   padding-bottom: 30px; }
 
+#content {
+  min-height: calc(100vh - 330px); }
+
 .content-area {
   width: 70vw;
   float: left; }
@@ -732,7 +741,18 @@ a {
   width: 30vw;
   float: right;
   padding: 20px;
+  padding-right: 60px;
   overflow: hidden; }
+  .widget-area section {
+    background-color: red; }
+    .widget-area section .widget-title {
+      margin: 0;
+      padding-left: 20px; }
+    .widget-area section ul {
+      padding: 0; }
+      .widget-area section ul li {
+        padding: 0;
+        list-style: none; }
 
 .sticky {
   display: block; }
@@ -741,7 +761,8 @@ a {
   margin: 0 0 8vh; }
   .hentry::after {
     width: 100%;
-    display: block;
+    padding-top: 2vw;
+    display: inline-block;
     text-align: right;
     content: "Eure KJG";
     font-family: "Indie Flower", cursive;
@@ -808,37 +829,31 @@ a {
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
-#colophon, #infinite-footer {
-  position: fixed;
+#colophon {
   width: 100vw;
   bottom: 0;
-  height: 28px;
-  z-index: 99999; }
-  #colophon .container, #infinite-footer .container {
+  height: 50px;
+  line-height: 50px; }
+  #colophon .container {
     background: rgba(255, 255, 255, 0.8);
     border-color: #ccc;
     border-color: rgba(0, 0, 0, 0.1);
     border-style: solid;
     border-width: 1px 0 0;
     overflow: hidden;
-    padding: 1px 20px;
+    padding: 0 25px;
     width: 100vw; }
-    #colophon .container a, #infinite-footer .container a {
+    #colophon .container a {
       text-decoration: none; }
-    #colophon .container .blog-info, #infinite-footer .container .blog-info {
-      display: inline-block; }
-      #colophon .container .blog-info a, #infinite-footer .container .blog-info a {
-        color: #111;
-        font-size: 14pt;
-        font-weight: bold; }
-    #colophon .container .blog-credits, #infinite-footer .container .blog-credits {
-      display: inline-block;
-      text-align: right;
-      float: right;
-      color: #888;
-      font-size: 12pt; }
-      #colophon .container .blog-credits a, #infinite-footer .container .blog-credits a {
-        color: #666; }
+  #colophon .blog-credits {
+    display: inline-block;
+    text-align: right;
+    float: right;
+    color: #000;
+    font-size: 16px;
+    font-size: 1rem; }
+    #colophon .blog-credits a {
+      color: #444; }
 
 @media screen and (max-width: 600px) {
   #colophon {
@@ -988,3 +1003,29 @@ object {
 @media screen and (max-width: 950px) {
   #secondary {
     width: 100vw; } }
+
+.PP_Entry__header {
+  width: 100%;
+  left: 0 !important;
+  bottom: 0 !important;
+  text-shadow: 3px 3px 2px #333 !important; }
+  .PP_Entry__header:hover {
+    background: inherit; }
+
+.PP_Entry__title, .PP_Entry__subtitle {
+  font-family: "Raleway", sans-serif;
+  color: #eee !important;
+  width: 100%;
+  margin: 0;
+  padding-left: 20px !important;
+  text-shadow: 2px 2px 2px #333 !important; }
+  .PP_Entry__title a, .PP_Entry__subtitle a {
+    text-decoration: none;
+    color: inherit !important;
+    text-shadow: inherit !important; }
+    .PP_Entry__title a:visited, .PP_Entry__subtitle a:visited {
+      color: inherit !important; }
+
+.PP_Card a {
+  color: inherit !important;
+  text-shadow: inherit !important; }

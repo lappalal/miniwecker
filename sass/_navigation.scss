@@ -33,16 +33,6 @@ a {
   margin-bottom: 10px;
   display: inline-block;
 
-  @media screen and (max-width: 1230px) {
-    margin-bottom: 70px;
-  }
-  @media screen and (max-width: 495px) {
-    margin-bottom: 90px;
-  }
-  @media screen and (max-width: 370px) {
-    margin-bottom: 130px;
-  }
-
   ul {
     font-family: inherit;
     text-decoration: none;
@@ -75,11 +65,19 @@ a {
         &:hover {
           background-image: url( 'img/menu/startseiteHover.svg' );
         }
+
+        @media screen and (max-width: 498px) {
+          display: none;
+        }
       }
 
       &.nav-kjg {
         &:hover {
           background-image: url( 'img/menu/dieKJGHover.svg' );
+        }
+
+        @media screen and (max-width: 1230px) {
+          display: none;
         }
       }
 
@@ -92,6 +90,10 @@ a {
       &.nav-aktionen {
         &:hover {
           background-image: url( 'img/menu/aktionenHover.svg' );
+        }
+
+        @media screen and (max-width: 1230px) {
+          display: none;
         }
       }
 
@@ -110,6 +112,12 @@ a {
       &.nav-kontakt {
         &:hover {
           background-image: url( 'img/menu/kontaktHover.svg' );
+        }
+
+        display: none;
+
+        @media screen and (max-width: 840px) {
+          display: none;
         }
       }
     }

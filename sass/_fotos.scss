@@ -1,8 +1,9 @@
 .PP_Entry__header {
-  background: rgba(0.2, 0.2, 0.2, 0.4);
+  //background: rgba(0.2, 0.2, 0.2, 0.4);
   width: 100%;
   left: 0 !important;
   bottom: 0 !important;
+  text-shadow: 3px 3px 2px #333 !important;
 
   &:hover {
     background: inherit;
@@ -11,14 +12,16 @@
 
 .PP_Entry__title, .PP_Entry__subtitle {
   font-family: $font__main;
-  color: #ddd !important;
+  color: #eee !important;
   width: 100%;
   margin: 0;
   padding-left: 20px !important;
+  text-shadow: 2px 2px 2px #333 !important;
 
   a {
     text-decoration: none;
     color: inherit !important;
+    text-shadow: inherit !important;
 
     &:visited {
       color: inherit !important;
@@ -28,4 +31,5 @@
 
 .PP_Card a {
   color: inherit !important;
+  text-shadow: inherit !important;
 }

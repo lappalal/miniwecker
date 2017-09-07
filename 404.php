@@ -19,9 +19,9 @@ get_header(); ?>
 
 				<div class="page-content error-404">
 
-					<p>Die Seite, die du versucht hast aufzurufen gibt es leider nicht.</p>
+					<p>Die Seite, die du aufzurufen willst, gibt es hier leider nicht.</p>
 
-          <p>Vielleicht hast du dich einfach vertippt? Oder hat dir jemand einen Link geschickt der nicht funktioniert? Wenn du dir sicher bist, dass der Link eigentlich funktionieren sollte, dann haben wohl der Jakob und der Ferdy hier mal wieder gepfuscht. Und du sollst es nun ausbaden? Nenene, schreib am Besten schnell eine <a href="mailto:pfarrjugendleitung@miniwecker.de">eMail</a> und die beiden bekommen ordentlich auf die Finger und müssen die kommende Nacht durcharbeiten, damit der Fehler so schnell wie möglich verschwindet.</p>
+          <p>Vielleicht hast du dich einfach vertippt? Oder hat dir jemand einen Link geschickt der nicht funktioniert? Wenn du dir sicher bist, dass diese Seite eigentlich funktionieren sollte, dann hat wohl der Jakob hier mal wieder gepfuscht. Und du sollst es nun ausbaden? Nenene, schreib am Besten schnell eine <a href="mailto:pfarrjugendleitung@miniwecker.de">eMail</a> oder kontaktier uns &uuml;ber das <a href="/kontakt">Kontaktformular</a> und er bekommt ordentlich auf die Finger und muss die kommende Nacht durcharbeiten, damit der Fehler so schnell wie möglich verschwindet.</p>
 
           <p>Es tut uns also sehr leid. Keiner von uns beiden wollte hier landen, vielleicht gehst du einfach nochmal zurück auf die <a href="/">Startseite</a>. Tschuldigung!</p>
 
