@@ -58,7 +58,7 @@ function miniwecker_infinite_scroll_render() {
 add_filter('infinite_scroll_credit','miniwecker_infinite_scroll_credit');
 
 function miniwecker_infinite_scroll_credit(){
- $content = '<a href="/intern">Intern</a> | <a href="' . admin_url() . '">Login</a> | made by <a id="blog-title" href="http:" rel="home">Jakob Sautner</a>';
+ $content = '<a href="/kontakt">Kontakt</a> | <a href="' . admin_url() . '">Login</a> | <a href="/impressum">Impressum</a>';
  return $content;
 }
 /** End JetPack **/

@@ -743,16 +743,20 @@ a {
   padding: 20px;
   padding-right: 60px;
   overflow: hidden; }
-  .widget-area section {
-    background-color: red; }
-    .widget-area section .widget-title {
-      margin: 0;
-      padding-left: 20px; }
-    .widget-area section ul {
-      padding: 0; }
-      .widget-area section ul li {
-        padding: 0;
-        list-style: none; }
+  .widget-area section.widget_upcoming_events_widget .widget-title {
+    border-bottom: #42A1DB 3px solid;
+    border-bottom-width: 60%; }
+  .widget-area section.widget_recent_entries .widget-title {
+    border-bottom: #66D998 3px solid;
+    border-bottom-width: 60%; }
+  .widget-area section .widget-title {
+    margin: 0;
+    padding-left: 20px; }
+  .widget-area section ul {
+    padding: 20px 0 0 20px; }
+    .widget-area section ul li {
+      padding: 0;
+      list-style: none; }
 
 .sticky {
   display: block; }

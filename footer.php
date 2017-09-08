@@ -21,16 +21,6 @@
   </div><!-- #infinite-footer -->
 </div><!-- #page -->
 
-<script>
-twttr.widgets.createTimeline(
-  {
-    sourceType: "profile",
-    screenName: "TwitterDev"
-  },
-  document.getElementById("container")
-);
-</script>
-
 <?php wp_footer(); ?>
 
 </body>
