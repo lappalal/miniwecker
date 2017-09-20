@@ -262,32 +262,12 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
-	"\/js\/customizer-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 2,
-		"oAP": "\/js\/invalid-output-filename-pattern.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
 	"\/js\/customizer.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 2,
-		"oAP": "\/js\/invalid-output-filename-pattern.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/navigation-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 2,
-		"oAP": "\/js\/invalid-output-filename-pattern.js",
+		"oAP": "\/js\/customizer.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -297,17 +277,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 2,
-		"oAP": "\/js\/invalid-output-filename-pattern.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/skip-link-focus-fix-min.js": {
-		"ft": 64,
-		"ma": 0,
-		"mi": 1,
-		"oA": 2,
-		"oAP": "\/js\/invalid-output-filename-pattern.js",
+		"oAP": "\/js\/navigation.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -317,7 +287,7 @@
 		"ma": 0,
 		"mi": 1,
 		"oA": 2,
-		"oAP": "\/js\/invalid-output-filename-pattern.js",
+		"oAP": "\/js\/skip-link-focus-fix.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -334,33 +304,13 @@
 		"oAP": "\/languages\/readme.txt",
 		"oF": 0
 		},
-	"\/layouts\/content-sidebar-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/layouts\/invalid-output-filename-pattern.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"\/layouts\/content-sidebar.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 2,
-		"oAP": "\/layouts\/invalid-output-filename-pattern.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/layouts\/sidebar-content-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/layouts\/invalid-output-filename-pattern.css",
+		"oAP": "\/layouts\/content-sidebar.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -370,7 +320,7 @@
 		"ft": 16,
 		"ma": 0,
 		"oA": 2,
-		"oAP": "\/layouts\/invalid-output-filename-pattern.css",
+		"oAP": "\/layouts\/sidebar-content.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -410,23 +360,13 @@
 		"oAP": "\/readme.txt",
 		"oF": 0
 		},
-	"\/rtl-min.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 2,
-		"oAP": "\/invalid-output-filename-pattern.css",
-		"oF": 0,
-		"oS": 3
-		},
 	"\/rtl.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 2,
-		"oAP": "\/invalid-output-filename-pattern.css",
+		"oAP": "\/rtl.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -751,7 +691,7 @@
 		"ft": 16,
 		"ma": 0,
 		"oA": 2,
-		"oAP": "\/invalid-output-filename-pattern.css",
+		"oAP": "\/style.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -789,7 +729,7 @@
 	"displayValue": "miniwecker",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "meme-chloe",
-	"lastBuiltDate": 527607540
+	"lastBuiltDate": 527607668
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -2545,7 +2485,7 @@
 		},
 	"languageDefaultsCSS": {
 		"autoOutputAction": 2,
-		"autoOutputPathFilenamePattern": "*",
+		"autoOutputPathFilenamePattern": "*.css",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
@@ -2589,7 +2529,7 @@
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 2,
-		"autoOutputPathFilenamePattern": "*",
+		"autoOutputPathFilenamePattern": "*.js",
 		"autoOutputPathRelativePath": "\/min",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
