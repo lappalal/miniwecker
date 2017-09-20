@@ -27,6 +27,12 @@
 		"oAP": "\/archive.php",
 		"oF": 0
 		},
+	"\/build\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/build\/.gitignore",
+		"oF": 0
+		},
 	"\/comments.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -78,7 +84,7 @@
 		"oAP": "\/img\/dummy.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/dummy_old.jpg": {
@@ -88,7 +94,7 @@
 		"oAP": "\/img\/dummy_old.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/Header.png": {
@@ -97,8 +103,8 @@
 		"oA": 0,
 		"oAP": "\/img\/Header.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -118,8 +124,8 @@
 		"oA": 0,
 		"oAP": "\/img\/Header@4x.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -130,7 +136,7 @@
 		"oAP": "\/img\/leiter_2017.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/img\/Logo.png": {
@@ -139,8 +145,8 @@
 		"oA": 0,
 		"oAP": "\/img\/Logo.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -256,6 +262,16 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
+	"\/js\/customizer-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/customizer-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/js\/customizer.js": {
 		"ft": 64,
 		"ma": 0,
@@ -266,12 +282,32 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/js\/navigation-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/navigation-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/js\/navigation.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/navigation-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/skip-link-focus-fix-min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/skip-link-focus-fix-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -298,6 +334,16 @@
 		"oAP": "\/languages\/readme.txt",
 		"oF": 0
 		},
+	"\/layouts\/content-sidebar-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/layouts\/content-sidebar-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/layouts\/content-sidebar.css": {
 		"aP": 1,
 		"bl": 0,
@@ -305,6 +351,16 @@
 		"ma": 0,
 		"oA": 0,
 		"oAP": "\/layouts\/content-sidebar-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/layouts\/sidebar-content-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/layouts\/sidebar-content-min-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -324,6 +380,12 @@
 		"oAP": "\/page.php",
 		"oF": 0
 		},
+	"\/README.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/README.html",
+		"oF": 0
+		},
 	"\/README.md": {
 		"cS": 0,
 		"eF": 1,
@@ -335,7 +397,7 @@
 		"oA": 0,
 		"oAP": "\/README.html",
 		"oF": 0,
-		"oFM": 0,
+		"oFM": 9,
 		"oS": 0,
 		"pHT": 0,
 		"pME": 1,
@@ -347,6 +409,16 @@
 		"oA": 2,
 		"oAP": "\/readme.txt",
 		"oF": 0
+		},
+	"\/rtl-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/rtl-min-min.css",
+		"oF": 0,
+		"oS": 3
 		},
 	"\/rtl.css": {
 		"aP": 1,
@@ -650,8 +722,8 @@
 		"oA": 0,
 		"oAP": "\/screenshot.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},
@@ -716,7 +788,8 @@
 	"creationDate": 524604854,
 	"displayValue": "miniwecker",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "meme-chloe"
+	"iconImageName": "meme-chloe",
+	"lastBuiltDate": 527607346
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
@@ -2108,7 +2181,7 @@
 	"esLintSourceType": 0,
 	"externalServerAddress": "http:\/\/localhost",
 	"gitIgnoreBuildFolder": 1,
-	"hideConfigFile": 0,
+	"hideConfigFile": 1,
 	"jsCheckerReservedNamesString": "",
 	"jsHintFlags2": {
 		"asi": {
@@ -2471,7 +2544,7 @@
 		"syntaxCheckerStyle": 1
 		},
 	"languageDefaultsCSS": {
-		"autoOutputAction": 0,
+		"autoOutputAction": 2,
 		"autoOutputPathFilenamePattern": "*-min.css",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
@@ -2506,7 +2579,7 @@
 		"useUnixNewlines": 0
 		},
 	"languageDefaultsJPG": {
-		"autoOutputAction": 0,
+		"autoOutputAction": 2,
 		"autoOutputPathFilenamePattern": "*.jpg",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
@@ -2515,7 +2588,7 @@
 		"quality": 100
 		},
 	"languageDefaultsJS": {
-		"autoOutputAction": 0,
+		"autoOutputAction": 2,
 		"autoOutputPathFilenamePattern": "*-min.js",
 		"autoOutputPathRelativePath": "\/min",
 		"autoOutputPathReplace1": "",
@@ -2576,7 +2649,7 @@
 		"enableSmartQuotes": 1,
 		"escapeLineBreaks": 0,
 		"maskEmailAddresses": 1,
-		"outputFormat": 0,
+		"outputFormat": 9,
 		"outputStyle": 0,
 		"parseMetadata": 1,
 		"processHTML": 0,
@@ -2592,7 +2665,7 @@
 		"autoOutputPathStyle": 0
 		},
 	"languageDefaultsPNG": {
-		"autoOutputAction": 0,
+		"autoOutputAction": 2,
 		"autoOutputPathFilenamePattern": "*.png",
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
