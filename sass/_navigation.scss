@@ -204,3 +204,8 @@ a {
     }
   }
 }
+@media screen and (max-width: 380px) {
+  .main-navigation {
+    height: 80px;
+  }
+}
