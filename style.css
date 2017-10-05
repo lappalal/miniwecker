@@ -5,7 +5,7 @@ Theme URI: http://underscores.me/
 Author: Jakob Sautner
 Author URI: http://sautner.cc
 Description: miniwecker - katholische Jugend Gauting
-Version: 0.0.0
+Version: 1.0.1
 License: GNU General Public License v2 or later
 License URI: LICENSE
 Text Domain: miniwecker
@@ -622,6 +622,10 @@ a {
         font-size: 14pt;
         width: 120px; } }
 
+/*
+ * @since 1.0.1
+ * @issue #1 *fixed*
+ */
 @media screen and (max-width: 380px) {
   .main-navigation {
     height: 80px; } }
