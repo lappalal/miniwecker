@@ -173,9 +173,6 @@
   }
 }
 
-.entry-content {
-}
-
 .signature {
   font-family: $font__heading;
   margin: 0;
@@ -212,7 +209,6 @@
   .blog-credits {
     display: inline-block;
     text-align: right;
-    float: right;
     color: #000;
     @include font-size(1);
     a {
